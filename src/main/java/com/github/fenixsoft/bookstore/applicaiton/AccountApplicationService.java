@@ -44,7 +44,6 @@ public class AccountApplicationService {
 
     public void createAccount(Account account) {
         account.setPassword(encoder.encode(account.getPassword()));
-
         repository.save(account);
     }
 
